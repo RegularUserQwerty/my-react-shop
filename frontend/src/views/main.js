@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './main.css';
 import Product from '../components/product';
-import image from '../images/product.jpg'
 
 function Main() {
 
@@ -21,7 +20,15 @@ function Main() {
 
 	return (
 		<div className="Main">
-			{ products.map((item) => <Product key={item._id} header={item.header} image={item.image} price={item.price}/>) }
+			{ products.map((item) => (
+				<Product 
+					key={item._id} 
+					id={item._id}
+					header={item.title || item.header} 
+					image={item.image} 
+					price={item.price}
+				/>
+			)) }
 		</div>
 	);
 }

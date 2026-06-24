@@ -1,24 +1,46 @@
-.Header{
-  width: 100vw;
-	min-width: max-content;
-	height: 50px;
-	background-color: #aad7ff;
-	display: flex;
-	justify-content: flex-end;
+.Header {
+    width: 100vw;
+    min-width: max-content;
+    height: 55px; 
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 40px; 
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05); 
 }
 
-.Header ul{
-	display: flex;
+
+.header-logo {
+    font-size: 19px;
+    font-weight: 600;
+    color: #2b2d42; 
+    letter-spacing: 1.5px; 
+    cursor: pointer;
+    user-select: none;
 }
+
+.Header ul {
+    display: flex;
+    height: 100%;
+}
+
 
 .Header li {
-	width: 140px;
-	height: 100%;
-	list-style: none;
-	line-height: 50px;
-	cursor: pointer;
+    width: 120px;
+    height: 100%;
+    list-style: none;
+    line-height: 55px; 
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c757d; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
+
 .Header li:hover {
-  background-color: #7ec3ff;
+    background-color: #f8f9fa; 
+    color: #2b2d42; 
 }

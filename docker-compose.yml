@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  mongo-db:
+    image: mongo:latest
+    container_name: shop-mongodb
+    ports:
+      - "27017:27017" 
+    volumes:
+      - mongo-data:/data/db 
+
+
+  backend-server:
+    build: ./backend 
+    container_name: shop-backend
+    ports:
+      - "9001:9001"
+    environment:
+      - MONGO_URI=mongodb://mongo-db:27017/test  # <-- ИСПРАВЛЕНО ТУТ
+    depends_on:
+      - mongo-db
+
+  frontend-client:
+    build: ./frontend 
+    container_name: shop-frontend
+    ports:
+      - "3000:3000"
+    stdin_open: true 
+    depends_on:
+      - backend-server
+
+volumes:
+  mongo-data:

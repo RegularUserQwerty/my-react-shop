@@ -1,6 +1,191 @@
-.Basket{
-	width: 100%;
-	height: calc(100vh - 50px - 50px);
-	background-color: #fff;
-	
+.basket-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 180px); 
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.basket-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.basket-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.basket-delete-btn {
+    width: 100%;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.basket-delete-btn:hover {
+    background-color: #bd2130;
+}
+
+.basket-footer {
+    border-top: 2px solid #333;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-total {
+    font-size: 22px;
+    margin: 0;
+}
+
+.basket-total-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.basket-clear-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.basket-order-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.basket-empty {
+    padding: 50px;
+    text-align: center;
+    min-height: calc(100vh - 180px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Стили для модалбокс*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* чтобы окно было поверх хедера и футера */
+}
+
+/* Само окошко по центру */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/*формы и инпуты */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* срок действия и CVC*/
+.card-extra-fields {
+    display: flex;
+    gap: 15px;
+}
+
+.card-extra-fields label {
+    flex: 1;
+}
+
+/* Кнопки внутри модалюокс */
+.modal-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.submit-order-btn {
+    flex: 1;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel-order-btn {
+    flex: 1;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
 }
