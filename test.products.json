@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "6a3cfc269c780658a8059a2a"
+  },
+  "title": "Xiaomi Mouse Comfort Edition",
+  "price": 2290,
+  "image": "images/mouse.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a3cfcbd9c780658a8059a2b"
+  },
+  "title": "Xiaomi OpenWear Stereo",
+  "price": 14990,
+  "image": "images/headset_openwear.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a3cfcf99c780658a8059a2c"
+  },
+  "title": "Xiaomi Redmi Headphones Neo",
+  "price": 4780,
+  "image": "images/headset.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a3cfd3c9c780658a8059a2d"
+  },
+  "title": "Xiaomi MK71 Pro Mechanical Keyboard",
+  "price": 7599,
+  "image": "images/keyboard.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a3cfd7d9c780658a8059a2e"
+  },
+  "title": "Xiaomi MIIIW Three-Mode Wireless Mechanical Keyboard 68-Key ART ",
+  "price": 12490,
+  "image": "images/keyboard_white.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a3cfddc9c780658a8059a2f"
+  },
+  "title": "Ноутбук Redmi Book Pro 16 2025",
+  "price": 43790,
+  "image": "images/laptop.jpeg"
+},
+{
+  "_id": {
+    "$oid": "6a3cfe3b9c780658a8059a30"
+  },
+  "title": "Xiaomi Redmi Monitor G27Q 2025",
+  "price": 19590,
+  "image": "images/Monitor.jpg"
+}]
